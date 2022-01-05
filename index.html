@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;900&display=swap" rel="stylesheet"> 
-  <!-- icon -->
+  <!-- font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/33a331435f.js" crossorigin="anonymous"></script>
+  <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -17,7 +21,26 @@
 <body>
  
   <!-- Header -->
-
+  <header id="header">
+    <nav id="nav">
+      <img id="branding" src="assets/images/logo.svg" alt="logo"/>
+      <aside class="menu">
+        <i class="fa fa-navicon"></i>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li id="contact-btn"><a href="#footer">Contact</a></li>
+        </ul>
+      </aside>
+    </nav>
+    <div class="header-content">
+      <h1 class="title">
+        WE ARE CREATIVES
+      </h1>
+      <img src="/assets/images/icon-arrow-down.svg" alt="scroll-down" class="arrow-down">
+    </div>
+  </header>
   <!-- Main -->
 
     <!-- main content -->
@@ -30,5 +53,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <!-- js -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
