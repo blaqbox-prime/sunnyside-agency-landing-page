@@ -143,7 +143,7 @@ h1,h2,h3{
 }
 
 /* main content*/
-#about > img{
+img{
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -274,6 +274,34 @@ article > .content > p{
 
 .occupation{
     font-size: .7rem;
+}
+
+/* Gallery */
+
+#gallery{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 190px);
+}
+
+.gallery-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-img:nth-child(1){
+    background-image: url('/assets/images/mobile/image-gallery-milkbottles.jpg');
+}
+.gallery-img:nth-child(2){
+    background-image: url('/assets/images/mobile/image-gallery-orange.jpg');
+}
+.gallery-img:nth-child(3){
+    background-image: url('/assets/images/mobile/image-gallery-cone.jpg');
+}
+.gallery-img:nth-child(4){
+    background-image: url('/assets/images/mobile/image-gallery-sugar-cubes.jpg');
 }
 
 /* Animations */
