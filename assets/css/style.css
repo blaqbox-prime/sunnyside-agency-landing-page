@@ -10,7 +10,7 @@
 /* photography text */
 --dark-blue: hsl(198, 62%, 26%);
 /* footer */
---dark-moderate-cyan : hsl(168, 34%, 41%);
+--dark-moderate-cyan : #458c7e;
 
  /* Neutral */
 
@@ -302,6 +302,43 @@ article > .content > p{
 }
 .gallery-img:nth-child(4){
     background-image: url('/assets/images/mobile/image-gallery-sugar-cubes.jpg');
+}
+
+/* Footer */
+
+#footer{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9edccd;
+    color: var(--dark-moderate-cyan);
+}
+
+#footer-branding{
+    margin-bottom: 2rem;
+    margin-right: -2.5rem;
+    transform: scale(150%);
+}
+
+#footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footer-nav{
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+.footer-nav > li > a{
+    color: var(--dark-moderate-cyan);
+}
+
+.social-links{
+    width: 170px;
+    margin-bottom: 2rem;
 }
 
 /* Animations */
