@@ -23,10 +23,10 @@
   <!-- Header -->
   <header id="header">
     <nav id="nav">
-      <img id="branding" src="assets/images/logo.svg" alt="logo"/>
+      <img id="branding" src="/assets/images/logo.svg" alt="logo"/>
       <aside class="menu">
-        <i class="fa fa-navicon"></i>
-        <ul class="nav__links">
+        <i class="fa fa-navicon" id="menu-toggle"></i>
+        <ul class="nav__links" id="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -85,7 +85,8 @@
 
     <section id="testimonials">
       <h1>Client Testimonials</h1>
-      <!-- --------------------------------------- -->
+      <section class="client-testimonials">
+        <!-- --------------------------------------- -->
       <article class="client-testimonial">
         <img src="/assets/images/image-emily.jpg" alt="emily R" class="avatar-img">
         <p class="testimony">
@@ -111,6 +112,8 @@
         <h2 class="client-name">Jennie F.</h2>
         <small class="occupation">Business Owner</small>
       </article>
+      </section>
+      
     </section>
 
     <section class="gallery" id="gallery">
