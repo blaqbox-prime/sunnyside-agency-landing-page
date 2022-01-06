@@ -64,7 +64,7 @@ h3 {
 /* Header */
 #header {
   height: 100vh;
-  background-image: url("/assets/images/mobile/image-header.jpg");
+  background-image: url("./assets/images/mobile/image-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -218,7 +218,7 @@ main img {
   min-height: 600px;
   width: 100%;
   background-size: cover;
-  background-image: url("/assets/images/mobile/image-graphic-design.jpg");
+  background-image: url("./assets/images/mobile/image-graphic-design.jpg");
   color: var(--dark-desaturated-cyan);
 }
 
@@ -237,7 +237,7 @@ article > .content {
   min-height: 600px;
   width: 100%;
   background-size: cover;
-  background-image: url("/assets/images/mobile/image-photography.jpg");
+  background-image: url("./assets/images/mobile/image-photography.jpg");
 }
 
 #photography > div {
@@ -309,16 +309,16 @@ article > .content > p {
 }
 
 .gallery-img:nth-child(1) {
-  background-image: url("/assets/images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url("./assets/images/mobile/image-gallery-milkbottles.jpg");
 }
 .gallery-img:nth-child(2) {
-  background-image: url("/assets/images/mobile/image-gallery-orange.jpg");
+  background-image: url("./assets/images/mobile/image-gallery-orange.jpg");
 }
 .gallery-img:nth-child(3) {
-  background-image: url("/assets/images/mobile/image-gallery-cone.jpg");
+  background-image: url("./assets/images/mobile/image-gallery-cone.jpg");
 }
 .gallery-img:nth-child(4) {
-  background-image: url("/assets/images/mobile/image-gallery-sugar-cubes.jpg");
+  background-image: url("./assets/images/mobile/image-gallery-sugar-cubes.jpg");
 }
 
 /* Footer */
@@ -363,7 +363,7 @@ article > .content > p {
 @media screen and (min-width: 760px) {
   /* Header */
   #header {
-    background-image: url("/assets/images/desktop/image-header.jpg");
+    background-image: url("./assets/images/desktop/image-header.jpg");
 
     padding: 2rem;
   }
@@ -459,7 +459,7 @@ article > .content > p {
     padding: 0;
     text-align: center;
     background-size: cover;
-    background-image: url("/assets/images/desktop/image-graphic-design.jpg");
+    background-image: url("./assets/images/desktop/image-graphic-design.jpg");
     color: var(--dark-desaturated-cyan);
     background-position: center;
   }
@@ -475,7 +475,7 @@ article > .content > p {
     text-align: center;
     background-position: center;
     background-size: cover;
-    background-image: url("/assets/images/desktop/image-photography.jpg");
+    background-image: url("./assets/images/desktop/image-photography.jpg");
   }
   article > .content > p {
     margin: 1rem 0;
@@ -506,6 +506,18 @@ article > .content > p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 445px;
   }
+  .gallery-img:nth-child(1) {
+  background-image: url("./assets/images/desktop/image-gallery-milkbottles.jpg");
+}
+.gallery-img:nth-child(2) {
+  background-image: url("./assets/images/desktop/image-gallery-orange.jpg");
+}
+.gallery-img:nth-child(3) {
+  background-image: url("./assets/images/desktop/image-gallery-cone.jpg");
+}
+.gallery-img:nth-child(4) {
+  background-image: url("./assets/images/desktop/image-gallery-sugar-cubes.jpg");
+}
 
 }
 
