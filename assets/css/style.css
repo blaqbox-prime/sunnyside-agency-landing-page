@@ -362,7 +362,7 @@ article > .content > p {
 @media screen and (min-width: 760px) {
   /* Header */
   #header {
-    background-image: url("../desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.jpg");
 
     padding: 2rem;
   }
@@ -515,7 +515,7 @@ article > .content > p {
     background-image: url("../images/desktop/image-gallery-cone.jpg");
   }
   .gallery-img:nth-child(4) {
-    background-image: url("../images/desktop/image-gallery-sugar-cubes.jpg");
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
   }
   
 }
