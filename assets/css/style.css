@@ -363,7 +363,7 @@ article > .content > p {
 @media screen and (min-width: 760px) {
   /* Header */
   #header {
-    background-image: url("./assets/images/desktop/image-header.jpg");
+    background-image: url("../../assets/images/desktop/image-header.jpg");
 
     padding: 2rem;
   }
