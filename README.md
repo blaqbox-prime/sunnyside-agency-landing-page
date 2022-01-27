@@ -1,8 +1,10 @@
-# Frontend Mentor - Sunnyside agency landing page
+# Sunnyside agency landing page
 
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -28,32 +30,87 @@ Users should be able to:
 
 ![](./screenshots/desktop.png)
 ![](./screenshots/mobile.png)
-![](./screenshots/errorstate.png)
-![](./screenshots/customtip.png)
 
 
 ### Links
 
-- Solution URL: [https://github.com/blaqbox-prime/tip-calculator](https://github.com/blaqbox-prime/tip-calculator)
+- Solution URL: [github.com/blaqbox-prime/sunnyside-agency-landing-page](https://github.com/blaqbox-prime/sunnyside-agency-landing-page)
 
-- Live Site URL: [https://tip-calculator-fem.herokuapp.com/](https://tip-calculator-fem.herokuapp.com/)
+- Live Site URL: [Hosted on Github Pages](https://blaqbox-prime.github.io/sunnyside-agency-landing-page/)
 
 ## My process
-I start off with creating color variables in the document root. Then creating the css classes for text colors and background colors. I then analyze the design and chopped it into sections (top and bottom) then split those sections furthur into smaller content containers and start writing the css for those containers as closely as possible to the design. After going as far as I can with the styling I then write the HTML with the classes I've already created. From there everything is adjusted as the HTML is written.
+I start off with creating color variables in the document root. Then creating the css classes for text colors and background colors. I then analyze the design and chopped it into sections then split those sections furthur into smaller content containers and start writing the css for those containers as closely as possible to the design. After going as far as I can with the styling I then write the HTML. From there everything is adjusted as the HTML is written.
 
-I use a mobile first aproach so the mobile ui is the initial style then a media query for larger screens, 960px+ is used to create the desktop design. For the desktop layout I used flexbox and Grid for the outer (white) container.
+I use a mobile first aproach so the mobile ui is the initial style then a media query for larger screens, 960px+ is used to create the desktop design. 
 
 ### Built with
-- React.JS
+- Vanilla Javascript
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- CSS grid
 
 
 ### What I learned
 
-It's been good practice for my layout skills. I take quite a bit of time figuring out how to write the css for layouts and style for certain states so, it's been pretty helpful in seeing how much better I could do some things whenever I get stuck. I used react for this project and I always tend to write as little code as possible and at the same time I feel an urgency to rush to the end so whenever there's like no way around it and there's quite a chunk of code I feel uneasy😅 But there's still quite a long way to go with my react journey and I'm thinking of trying bigger projects built with react. 
+The thing I found most challenging about this project was aligning the images and text in the image grids where the background is an image and the text sits on it. getting the text to not clash with parts of the image as the viewport was being resized took a minute to figure out. 
+
+```html
+  <article title="Graphic design" id="graphic-design">
+            <div class="content">
+              <h1>Graphic Design</h1>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          
+            </div>
+          </article>
+
+        <!-- ------------------------------------------------------- -->
+          <article title="Photography" id="photography">
+            <div class="content">
+              <h1>Photography</h1>
+              <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </div>
+          </article>
+```
+
+
+```css
+main #graphic-design {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: #9edccd;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    color: var(--dark-desaturated-cyan);
+    background-position: center;
+  }
+
+  main #photography {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: #63cdff;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+  article > .content > p {
+    margin: 1rem 0;
+    max-width: 330px;
+  }
+```
+
+Although I do think I should have used a container element to limit the sizes of some content. It just tends to look good until a certain width, then everything just looks a little stretched out
 
 ## Author
 
